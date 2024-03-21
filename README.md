@@ -6,22 +6,24 @@ Es un modelo de ramificación que fue diseñado por un ingeniero de software lla
 
 # Ramas Principales: #
 
-## Main(antes Master): ##
+**Main(antes Master):**
 Esta rama contiene el código estable y probado que se encuentra en producción. Las fusiones en esta rama generalmente se hacen desde la rama "release" después de un ciclo de lanzamiento exitoso. Se suelen nombrar con número de versión.
 
-## Develop: 
+**Develop:**
 Aquí es donde se integran todas las características completadas y se realizan pruebas de integración. Es una versión en desarrollo que aún no está lista para ser lanzada. Es desde donde se lanzan las características, features
 
 
 
 # Ramas Temporales:
 
-## Feature: 
+**Feature:**
 Para implementar nuevas características o mejoras en el proyecto. Se crean a partir de la rama "develop". Una vez completada la función, se fusiona nuevamente con "develop".
-## Release: 
+**Release:**
 Cuando se está preparando una nueva versión para su lanzamiento. Aquí se corrigen los errores menores y se realizan las pruebas finales. Se crea a partir de "develop" y se fusiona en ambas "master" y "develop" después de las pruebas exitosas.
-## Hotfix: 
+**Hotfix:**
 Para corregir problemas críticos en producción. Se crean a partir de "master", se corrige el error y se fusionan nuevamente en "master" y "develop" para asegurarse de que las correcciones también se reflejen en el desarrollo en curso.
+
+
 
 # Flujo de Trabajo:
 
