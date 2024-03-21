@@ -74,3 +74,17 @@ Para fusionar cambios de una rama (por ejemplo, la rama dev) con otra (la rama m
 
 
 Este comando fusionará los cambios de la rama dev en la rama main. Si hay conflictos durante la fusión, Git te pedirá que los resuelvas manualmente. Una vez que los conflictos se resuelvan (si los hay), los cambios de la rama dev estarán integrados en la rama main.
+
+# Para subir una rama a github
+
+1. Asegúrate de estar en la rama que deseas subir. Por ejemplo, si deseas subir la rama dev, puedes posicionarte primero en la rama en cuestión:
+`git checkout dev`
+
+2. Una vez que estés en la rama que deseas subir, utiliza el siguiente comando para subir la rama al repositorio remoto (en este caso, GitHub):
+`git push -u origin dev`
+
+Donde origin es el nombre del control remoto (el repositorio en GitHub) y dev es el nombre de la rama que deseas subir.
+
+El uso de -u establece la rama remota como rama de seguimiento (tracking branch), lo que significa que en el futuro, puedes simplemente usar git push sin especificar la rama y Git sabrá a qué rama enviar los cambios.
+
+Una vez ejecutado este comando, la nueva rama debería estar disponible en tu repositorio en GitHub. Puedes verificarlo visitando tu repositorio en la interfaz web de GitHub.
