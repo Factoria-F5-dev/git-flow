@@ -60,3 +60,14 @@ Para crear una nueva rama en Git, puedes usar el comando git checkout -b <nombre
 `git checkout -b dev`
 
 Este comando creará una nueva rama llamada dev basada en la rama actual, que debería ser main si no has cambiado de rama. Después de ejecutar este comando, estarás en la nueva rama dev.
+
+# Para fusionar o "mergear" ramas 
+Para fusionar cambios de una rama (por ejemplo, la rama dev) con otra (la rama main), primero asegúrate de estar en la rama de destino (main). Puedes hacerlo utilizando el comando git checkout main. Luego, ejecuta el comando git merge seguido del nombre de la rama desde la cual deseas fusionar los cambios (dev en este caso).
+
+1. Asegúrate de estar en la rama `main`:
+`git checkout main``
+
+2. Fusiona los cambios de la rama `dev` en la rama `main`:
+`git merge dev``
+
+Este comando fusionará los cambios de la rama dev en la rama main. Si hay conflictos durante la fusión, Git te pedirá que los resuelvas manualmente. Una vez que los conflictos se resuelvan (si los hay), los cambios de la rama dev estarán integrados en la rama main.
