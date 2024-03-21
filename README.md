@@ -4,13 +4,15 @@
 
 Es un modelo de ramificación que fue diseñado por un ingeniero de software llamado Vicent Driessen. Este modelo se publicó en el año 2010. En otras palabras, podemos decir que un ''git flow es una forma de trabajar o de cómo se debería trabajar de forma individual o grupal.''
 
-# Ramas Principales:
+# Ramas Principales: #
 
-## Main(antes Master): 
+## Main(antes Master): ##
 Esta rama contiene el código estable y probado que se encuentra en producción. Las fusiones en esta rama generalmente se hacen desde la rama "release" después de un ciclo de lanzamiento exitoso. Se suelen nombrar con número de versión.
 
 ## Develop: 
 Aquí es donde se integran todas las características completadas y se realizan pruebas de integración. Es una versión en desarrollo que aún no está lista para ser lanzada. Es desde donde se lanzan las características, features
+
+
 
 # Ramas Temporales:
 
@@ -32,8 +34,6 @@ Para corregir problemas críticos en producción. Se crean a partir de "master",
 * Corrige el error en la rama "hotfix" y luego fusiona en "master" y "develop".
 
 Git-flow proporciona un flujo estructurado que ayuda a los equipos a mantener un desarrollo organizado, versiones estables y la capacidad de trabajar en nuevas características y correcciones de errores de manera paralela. Sin embargo, también es importante adaptar el flujo según las necesidades específicas del proyecto y el equipo.
-
-Ventajas y desventajas
 
 ## Ventajas de Git Flow:
 * Estructura clara que facilita la gestión de proyectos complejos.
