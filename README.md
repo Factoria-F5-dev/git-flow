@@ -50,3 +50,13 @@ Git-flow proporciona un flujo estructurado que ayuda a los equipos a mantener un
 * Curva de aprendizaje: Requiere entender bien el modelo y seguirlo disciplinadamente.
 
 Referencias: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+
+
+# Para crear ramas en git:
+
+Para crear una nueva rama en Git, puedes usar el comando git checkout -b <nombre_de_la_rama> seguido del nombre que deseas para la nueva rama. Si deseas clonar la rama **main** y llamar a esta copia **dev**, primero debes asegurarte de estar en la rama main, y luego ejecutar el siguiente comando:
+
+`git checkout -b dev`
+
+Este comando creará una nueva rama llamada dev basada en la rama actual, que debería ser main si no has cambiado de rama. Después de ejecutar este comando, estarás en la nueva rama dev.
