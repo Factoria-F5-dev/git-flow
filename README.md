@@ -1,6 +1,6 @@
 # git-flow
 
-<img src="https://www.zup.com.br/wp-content/uploads/2023/03/image1-2.png">
+<img src="https://www.zup.com.br/wp-content/uploads/2023/03/image1-2.png" style="width: 50%; height: auto;">
 
 Es un modelo de ramificación que fue diseñado por un ingeniero de software llamado Vicent Driessen. Este modelo se publicó en el año 2010. En otras palabras, podemos decir que un ''git flow es una forma de trabajar o de cómo se debería trabajar de forma individual o grupal.''
 
@@ -18,8 +18,10 @@ Aquí es donde se integran todas las características completadas y se realizan 
 
 **Feature:**
 Para implementar nuevas características o mejoras en el proyecto. Se crean a partir de la rama "develop". Una vez completada la función, se fusiona nuevamente con "develop".
+
 **Release:**
 Cuando se está preparando una nueva versión para su lanzamiento. Aquí se corrigen los errores menores y se realizan las pruebas finales. Se crea a partir de "develop" y se fusiona en ambas "master" y "develop" después de las pruebas exitosas.
+
 **Hotfix:**
 Para corregir problemas críticos en producción. Se crean a partir de "master", se corrige el error y se fusionan nuevamente en "master" y "develop" para asegurarse de que las correcciones también se reflejen en el desarrollo en curso.
 
