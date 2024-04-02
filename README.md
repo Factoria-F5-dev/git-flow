@@ -96,12 +96,12 @@ Una vez ejecutado este comando, la nueva rama debería estar disponible en tu re
 
 
 Convenciones:
-- Para nombrar ramas en GitHub cuando se trata de corregir errores en producción es utilizar el prefijo "hotfix-" seguido de una descripción breve y descriptiva del error o del cambio que se va a realizar. Ejemplo: hotfix-correccion-de-bug-123
-- De igual forma con "features", ejemplo: "feat-nueva-pagina-de-inicio"
+- Para nombrar ramas en GitHub cuando se trata de corregir errores en producción es utilizar el prefijo "hotfix-" seguido de una descripción breve y descriptiva del error o del cambio que se va a realizar. Ejemplo: hotfix-correccion-de-bug-123.
+- De igual forma con "features", ejemplo: "feat-nueva-pagina-de-inicio".
 - Ramas de lanzamiento (releases): Puedes usar un prefijo como "release-" o "v" seguido del número de versión y una breve descripción de los cambios que se incluyen en esa versión. Por ejemplo, "release-1.0.0" o "v2.1-beta".
-- Tanto la rama "releas2, "feature" y "hotfix" una vez incorporadas a "dev" se borran.
-- Las ramas "release" y "feature" se crean desde "develop"
-- La rama "hotfix" se saca desde "main", desde lo que está en producción
+- Tanto la rama "release", "feature" y "hotfix" una vez incorporadas a "dev" deberían de borrarse como buenas prácticas.
+- Las ramas "release" y "feature" se crean desde "develop".
+- La rama "hotfix" se crea desde "main", desde lo que está en producción.
 
 
 
