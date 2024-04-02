@@ -2,6 +2,8 @@
 
 <img src="https://www.zup.com.br/wp-content/uploads/2023/03/image1-2.png" style="width: 50%; height: auto;">
 
+https://learngitbranching.js.org/?locale=es_ES
+
 Es un modelo de ramificación que fue diseñado por un ingeniero de software llamado Vicent Driessen. Este modelo se publicó en el año 2010. En otras palabras, podemos decir que un ''git flow es una forma de trabajar o de cómo se debería trabajar de forma individual o grupal.''
 
 # Ramas Principales: #
@@ -25,7 +27,8 @@ Cuando se está preparando una nueva versión para su lanzamiento. Aquí se corr
 **Hotfix:**
 Para corregir problemas críticos en producción. Se crean a partir de "master", se corrige el error y se fusionan nuevamente en "master" y "develop" para asegurarse de que las correcciones también se reflejen en el desarrollo en curso.
 
-
+Si utilizas Source Tree te da esta estructura por defecto:
+<img src="https://jorgebenitezlopez.com/tiddlywiki/pro/sourtreeflow.png" style="width: 80%; height: auto;">
 
 # Flujo de Trabajo:
 
@@ -54,6 +57,8 @@ Referencias: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow
 
 
 # Para crear ramas en git:
+
+Para verificar ramas y el status de lo que tienes puedes ejecutar `git status`
 
 Para crear una nueva rama en Git, puedes usar el comando git checkout -b <nombre_de_la_rama> seguido del nombre que deseas para la nueva rama. Si deseas clonar la rama **main** y llamar a esta copia **dev**, primero debes asegurarte de estar en la rama main, y luego ejecutar el siguiente comando:
 
@@ -88,3 +93,15 @@ Donde origin es el nombre del control remoto (el repositorio en GitHub) y dev es
 El uso de -u establece la rama remota como rama de seguimiento (tracking branch), lo que significa que en el futuro, puedes simplemente usar git push sin especificar la rama y Git sabrá a qué rama enviar los cambios.
 
 Una vez ejecutado este comando, la nueva rama debería estar disponible en tu repositorio en GitHub. Puedes verificarlo visitando tu repositorio en la interfaz web de GitHub.
+
+
+Convenciones:
+- Para nombrar ramas en GitHub cuando se trata de corregir errores en producción es utilizar el prefijo "hotfix-" seguido de una descripción breve y descriptiva del error o del cambio que se va a realizar. Ejemplo: hotfix-correccion-de-bug-123
+- De igual forma con "features", ejemplo: "feat-nueva-pagina-de-inicio"
+- Ramas de lanzamiento (releases): Puedes usar un prefijo como "release-" o "v" seguido del número de versión y una breve descripción de los cambios que se incluyen en esa versión. Por ejemplo, "release-1.0.0" o "v2.1-beta".
+- Tanto la rama "releas2, "feature" y "hotfix" una vez incorporadas a "dev" se borran.
+- Las ramas "release" y "feature" se crean desde "develop"
+- La rama "hotfix" se saca desde "main", desde lo que está en producción
+
+
+
