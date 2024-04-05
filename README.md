@@ -1,4 +1,4 @@
-# git-flow
+main# git-flow
 
 <img src="https://www.zup.com.br/wp-content/uploads/2023/03/image1-2.png" style="width: 50%; height: auto;">
 
@@ -36,7 +36,7 @@ Si utilizas Source Tree te da esta estructura por defecto:
 * Trabaja en la función en la rama "feature" y realiza confirmaciones regulares.
 * Una vez que la función está completa, fusiona la rama "feature" en "develop".
 * Realiza pruebas y correcciones en la rama "release".
-* Después de las pruebas exitosas, fusiona la rama "release" en "master/maiin" y "develop".
+* Después de las pruebas exitosas, fusiona la rama "release" en "master/main" y "develop".
 * Si surge un error en producción, crea una rama "hotfix" desde "master/main".
 * Corrige el error en la rama "hotfix" y luego fusiona en "master" y "develop".
 
@@ -54,19 +54,18 @@ Git-flow proporciona un flujo estructurado que ayuda a los equipos a mantener un
 
 Referencias: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
-
-
 # Para crear ramas en git:
 
-Para verificar ramas y el status de lo que tienes puedes ejecutar `git status`
+Para verificar ramas `git branch` y el status `git status`
 
-Para crear una nueva rama en Git, puedes usar el comando git checkout -b <nombre_de_la_rama> seguido del nombre que deseas para la nueva rama. Si deseas clonar la rama **main** y llamar a esta copia **dev**, primero debes asegurarte de estar en la rama main, y luego ejecutar el siguiente comando:
+Para crear una nueva rama en Git, puedes usar el comando git checkout -b <nombre_de_la_rama> Si deseas clonar la rama **main** y llamar a esta copia **dev**, primero debes asegurarte de estar en la rama main, y luego ejecutar el siguiente comando:
 
 `git checkout -b dev`
 
 Este comando creará una nueva rama llamada dev basada en la rama actual, que debería ser main si no has cambiado de rama. Después de ejecutar este comando, estarás en la nueva rama dev.
 
 # Para fusionar o "mergear" ramas 
+
 Para fusionar cambios de una rama (por ejemplo, la rama dev) con otra (la rama main), primero asegúrate de estar en la rama de destino (main). Puedes hacerlo utilizando el comando git checkout main. Luego, ejecuta el comando git merge seguido del nombre de la rama desde la cual deseas fusionar los cambios (dev en este caso).
 
 1. Asegúrate de estar en la rama **main**:
@@ -76,7 +75,6 @@ Para fusionar cambios de una rama (por ejemplo, la rama dev) con otra (la rama m
 2. Fusiona los cambios de la rama **dev** en la rama **main**:
 
 `git merge dev`
-
 
 Este comando fusionará los cambios de la rama dev en la rama main. Si hay conflictos durante la fusión, Git te pedirá que los resuelvas manualmente. Una vez que los conflictos se resuelvan (si los hay), los cambios de la rama dev estarán integrados en la rama main.
 
@@ -94,8 +92,8 @@ El uso de -u establece la rama remota como rama de seguimiento (tracking branch)
 
 Una vez ejecutado este comando, la nueva rama debería estar disponible en tu repositorio en GitHub. Puedes verificarlo visitando tu repositorio en la interfaz web de GitHub.
 
+# Convenciones de nombres:
 
-Convenciones:
 - Para nombrar ramas en GitHub cuando se trata de corregir errores en producción es utilizar el prefijo "hotfix-" seguido de una descripción breve y descriptiva del error o del cambio que se va a realizar. Ejemplo: hotfix-correccion-de-bug-123.
 - De igual forma con "features", ejemplo: "feat-nueva-pagina-de-inicio".
 - Ramas de lanzamiento (releases): Puedes usar un prefijo como "release-" o "v" seguido del número de versión y una breve descripción de los cambios que se incluyen en esa versión. Por ejemplo, "release-1.0.0" o "v2.1-beta".
