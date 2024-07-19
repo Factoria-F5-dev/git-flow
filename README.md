@@ -78,6 +78,9 @@ Para fusionar cambios de una rama (por ejemplo, la rama dev) con otra (la rama m
 
 Este comando fusionará los cambios de la rama dev en la rama main. Si hay conflictos durante la fusión, Git te pedirá que los resuelvas manualmente. Una vez que los conflictos se resuelvan (si los hay), los cambios de la rama dev estarán integrados en la rama main.
 
+Cuando haya conflictos y no queramos aceptar el mergeo, ponemos este comando
+`git merge --abort`
+
 # Para subir una rama a github
 
 1. Asegúrate de estar en la rama que deseas subir. Por ejemplo, si deseas subir la rama dev, puedes posicionarte primero en la rama en cuestión:
