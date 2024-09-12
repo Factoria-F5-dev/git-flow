@@ -1,4 +1,4 @@
-main# git-flow
+# git-flow
 
 <img src="https://www.zup.com.br/wp-content/uploads/2023/03/image1-2.png" style="width: 50%; height: auto;">
 
