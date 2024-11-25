@@ -105,9 +105,9 @@ Una vez ejecutado este comando, la nueva rama debería estar disponible en tu re
 - Las ramas "release" y "feature" se crean desde "develop".
 - La rama "hotfix" se crea desde "main", desde lo que está en producción.
 
-  # Juego de Git
+# Juego de Git
 
-  https://learngitbranching.js.org/?locale=es_ES
+https://learngitbranching.js.org/?locale=es_ES
 
 
 
