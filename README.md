@@ -22,10 +22,10 @@ Aquí es donde se integran todas las características completadas y se realizan 
 Para implementar nuevas características o mejoras en el proyecto. Se crean a partir de la rama "develop". Una vez completada la función, se fusiona nuevamente con "develop".
 
 **Release:**
-Cuando se está preparando una nueva versión para su lanzamiento. Aquí se corrigen los errores menores y se realizan las pruebas finales. Se crea a partir de "develop" y se fusiona en ambas "master" y "develop" después de las pruebas exitosas.
+Cuando se está preparando una nueva versión para su lanzamiento. Aquí se corrigen los errores menores y se realizan las pruebas finales. Se crea a partir de "develop" y se fusiona en ambas "main" y "develop" después de las pruebas exitosas.
 
 **Hotfix:**
-Para corregir problemas críticos en producción. Se crean a partir de "master", se corrige el error y se fusionan nuevamente en "master" y "develop" para asegurarse de que las correcciones también se reflejen en el desarrollo en curso.
+Para corregir problemas críticos en producción. Se crean a partir de "main", se corrige el error y se fusionan nuevamente en "main" y "develop" para asegurarse de que las correcciones también se reflejen en el desarrollo en curso.
 
 Si utilizas Source Tree te da esta estructura por defecto:
 <img src="https://jorgebenitezlopez.com/tiddlywiki/pro/sourtreeflow.png" style="width: 80%; height: auto;">
@@ -38,7 +38,7 @@ Si utilizas Source Tree te da esta estructura por defecto:
 * Realiza pruebas y correcciones en la rama "release".
 * Después de las pruebas exitosas, fusiona la rama "release" en "master/main" y "develop".
 * Si surge un error en producción, crea una rama "hotfix" desde "master/main".
-* Corrige el error en la rama "hotfix" y luego fusiona en "master" y "develop".
+* Corrige el error en la rama "hotfix" y luego fusiona en "main" y "develop".
 
 Git-flow proporciona un flujo estructurado que ayuda a los equipos a mantener un desarrollo organizado, versiones estables y la capacidad de trabajar en nuevas características y correcciones de errores de manera paralela. Sin embargo, también es importante adaptar el flujo según las necesidades específicas del proyecto y el equipo.
 
