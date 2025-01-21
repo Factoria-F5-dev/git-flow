@@ -58,11 +58,28 @@ Referencias: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow
 
 Para verificar ramas `git branch` y el status `git status`
 
-Para crear una nueva rama en Git, puedes usar el comando git checkout -b <nombre_de_la_rama> Si deseas clonar la rama **main** y llamar a esta copia **dev**, primero debes asegurarte de estar en la rama main, y luego ejecutar el siguiente comando:
+Para crear una nueva rama en Git, puedes usar el comando git switch -c <nombre_de_la_rama> Si deseas clonar la rama **main** y llamar a esta copia **dev**, primero debes asegurarte de estar en la rama main, y luego ejecutar el siguiente comando:
 
-`git checkout -b dev`
+`git switch -c dev`
 
 Este comando creará una nueva rama llamada dev basada en la rama actual, que debería ser main si no has cambiado de rama. Después de ejecutar este comando, estarás en la nueva rama dev.
+
+Si quisiéramos borrar dev sería:
+
+`git branch -b dev`
+
+# Para subir una rama a github
+
+1. Asegúrate de estar en la rama que deseas subir. Por ejemplo, si deseas subir la rama dev, puedes posicionarte primero en la rama en cuestión:
+`git switch dev`
+
+2. Una vez que estés en la rama que deseas subir, en nuestro caso la rama dev, utiliza el siguiente comando para subir la rama al repositorio remoto (en este caso, GitHub):
+`git push --set-upstream origin dev`
+
+Donde origin es el nombre del control remoto (el repositorio en GitHub) y dev es el nombre de la rama que deseas subir.
+
+Una vez ejecutado este comando, la nueva rama debería estar disponible en tu repositorio en GitHub. Puedes verificarlo visitando tu repositorio en la interfaz web de GitHub.
+
 
 # Para fusionar o "mergear" ramas 
 
@@ -70,7 +87,7 @@ Para fusionar cambios de una rama (por ejemplo, la rama dev) con otra (la rama m
 
 1. Asegúrate de estar en la rama **main**:
 
-`git checkout main`
+`git switch main`
 
 2. Fusiona los cambios de la rama **dev** en la rama **main**:
 
@@ -81,20 +98,6 @@ Este comando fusionará los cambios de la rama dev en la rama main. Si hay confl
 Cuando haya conflictos y no queramos aceptar el mergeo, ponemos este comando
 
 `git merge --abort`
-
-# Para subir una rama a github
-
-1. Asegúrate de estar en la rama que deseas subir. Por ejemplo, si deseas subir la rama dev, puedes posicionarte primero en la rama en cuestión:
-`git checkout dev`
-
-2. Una vez que estés en la rama que deseas subir, utiliza el siguiente comando para subir la rama al repositorio remoto (en este caso, GitHub):
-`git push -u origin dev`
-
-Donde origin es el nombre del control remoto (el repositorio en GitHub) y dev es el nombre de la rama que deseas subir.
-
-El uso de -u establece la rama remota como rama de seguimiento (tracking branch), lo que significa que en el futuro, puedes simplemente usar git push sin especificar la rama y Git sabrá a qué rama enviar los cambios.
-
-Una vez ejecutado este comando, la nueva rama debería estar disponible en tu repositorio en GitHub. Puedes verificarlo visitando tu repositorio en la interfaz web de GitHub.
 
 # Convenciones de nombres:
 
