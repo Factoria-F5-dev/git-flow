@@ -66,7 +66,7 @@ Este comando creará una nueva rama llamada dev basada en la rama actual, que de
 
 Si quisiéramos borrar dev sería:
 
-`git branch -b dev`
+`git branch -d dev`
 
 # Para subir una rama a github
 
